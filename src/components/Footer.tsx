@@ -45,7 +45,7 @@ const Footer = () => (
               aria-label="Urban Craves on Instagram"
               className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors"
             >
-              <Instagram size={18} className="text-foreground" />
+              <Globe size={18} className="text-foreground" />
             </a>
             <a
               href="https://facebook.com"
