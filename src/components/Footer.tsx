@@ -54,7 +54,7 @@ const Footer = () => (
               aria-label="Urban Craves on Facebook"
               className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors"
             >
-              <Facebook size={18} className="text-foreground" />
+              <ExternalLink size={18} className="text-foreground" />
             </a>
           </div>
         </div>
