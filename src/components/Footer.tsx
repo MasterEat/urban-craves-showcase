@@ -1,5 +1,4 @@
-import { Instagram, Facebook } from "lucide-react";
-// @ts-ignore - icons exist in lucide-react
+import { Globe, ExternalLink } from "lucide-react";
 
 const Footer = () => (
   <footer className="bg-card border-t border-border py-14">
