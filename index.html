@@ -4,16 +4,190 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urban Craves | Casual Restaurant in Athens</title>
-    <meta name="description" content="Urban Craves is a modern casual restaurant in Athens offering burgers, street food, brunch, and signature dishes in a vibrant urban atmosphere." />
-    <meta name="keywords" content="casual restaurant Athens, street food Athens, burgers Athens, brunch Athens, Urban Craves" />
-    <meta property="og:title" content="Urban Craves | Casual Restaurant in Athens" />
-    <meta property="og:description" content="Modern casual restaurant in Athens. Burgers, street food, brunch & signature dishes in a vibrant urban atmosphere." />
-    <meta property="og:type" content="website" />
-    <link rel="canonical" href="https://urbancraves.gr" />
+    <meta name="description" content="Urban Craves in Athens serves bold burgers, street bites, brunch, cocktails, and desserts in an industrial-chic setting." />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header id="site-header" class="site-header">
+      <nav class="container nav" aria-label="Main navigation">
+        <a href="#home" class="brand">URBAN CRAVES</a>
+
+        <ul class="nav-list nav-list-desktop">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="btn btn-primary btn-sm">Book a Table</a></li>
+        </ul>
+
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          ☰
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="mobile-menu" hidden>
+        <ul class="nav-list-mobile">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#contact" class="btn btn-primary">Book a Table</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <img src="assets/hero.jpg" alt="Urban Craves restaurant interior with gourmet burgers and cocktails in Athens" class="hero-image" width="1920" height="1080" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="eyebrow">Casual Restaurant • Athens</p>
+          <h1>URBAN CRAVES</h1>
+          <p class="hero-text">Bold flavors, urban energy, and unforgettable bites — right in the heart of Athens.</p>
+          <div class="button-group">
+            <a href="#menu" class="btn btn-primary">View Menu</a>
+            <a href="#contact" class="btn btn-outline">Book a Table</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-dark reveal">
+        <div class="container grid-2">
+          <div class="image-wrap">
+            <img src="assets/about.jpg" alt="Urban Craves vibrant dining atmosphere in Athens with industrial-chic interior" width="800" height="1024" loading="lazy" />
+          </div>
+          <div>
+            <p class="eyebrow">Our Story</p>
+            <h2>WHERE FLAVOR MEETS THE CITY</h2>
+            <p>Born from a passion for bold flavors and urban culture, Urban Craves brings you a modern casual dining experience in the heart of Athens. We combine quality ingredients with creative recipes inspired by street food traditions from around the world.</p>
+            <p>Our industrial-chic space, warm hospitality, and carefully crafted menu make every visit an experience — whether you're here for our legendary smash burgers, weekend brunch, or handcrafted cocktails.</p>
+            <div class="stats">
+              <div><strong>5+</strong><span>Years</span></div>
+              <div><strong>50K+</strong><span>Happy Guests</span></div>
+              <div><strong>4.8</strong><span>Rating</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section section-surface reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">What We Serve</p>
+            <h2>SIGNATURE MENU</h2>
+            <p class="subtitle">Explore our bold and flavorful menu categories crafted with passion and the finest ingredients.</p>
+          </div>
+          <div class="card-grid">
+            <article class="overlay-card"><img src="assets/menu-burgers.jpg" alt="Gourmet smash burger with melted cheese Urban Craves Athens" loading="lazy" /><div><h3>BURGERS</h3><p>Smash burgers, loaded patties & gourmet creations</p></div></article>
+            <article class="overlay-card"><img src="assets/menu-street.jpg" alt="Crispy street food tacos with fresh toppings Urban Craves Athens" loading="lazy" /><div><h3>STREET BITES</h3><p>Tacos, sliders, loaded fries & global street flavors</p></div></article>
+            <article class="overlay-card"><img src="assets/menu-brunch.jpg" alt="Elegant brunch eggs benedict and avocado toast Urban Craves Athens" loading="lazy" /><div><h3>BRUNCH</h3><p>Weekend brunch classics & eggs-cellent dishes</p></div></article>
+            <article class="overlay-card"><img src="assets/menu-salads.jpg" alt="Fresh gourmet salad with grilled chicken Urban Craves Athens" loading="lazy" /><div><h3>SALADS</h3><p>Fresh bowls, seasonal greens & hearty salads</p></div></article>
+            <article class="overlay-card"><img src="assets/menu-cocktails.jpg" alt="Craft cocktails with amber tones Urban Craves Athens bar" loading="lazy" /><div><h3>COCKTAILS</h3><p>Handcrafted cocktails, wines & signature drinks</p></div></article>
+            <article class="overlay-card"><img src="assets/menu-desserts.jpg" alt="Chocolate lava cake with ice cream and caramel Urban Craves Athens" loading="lazy" /><div><h3>DESSERTS</h3><p>Indulgent sweets & handmade treats</p></div></article>
+          </div>
+          <p class="center mt-lg"><a href="#contact" class="btn btn-primary">Explore Full Menu</a></p>
+        </div>
+      </section>
+
+      <section class="section section-dark reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Chef's Selection</p>
+            <h2>MUST-TRY DISHES</h2>
+            <p class="subtitle">Our most-loved creations that keep Athens coming back for more.</p>
+          </div>
+          <div class="card-grid solid">
+            <article class="dish-card"><img src="assets/menu-burgers.jpg" alt="The Urban Smash burger signature dish Urban Craves Athens" loading="lazy" /><div><h3>THE URBAN SMASH <span>€14.90</span></h3><p>Double smash patty, aged cheddar, caramelized onions, smoky BBQ, brioche bun</p></div></article>
+            <article class="dish-card"><img src="assets/menu-street.jpg" alt="Street tacos trio pulled pork crispy chicken Urban Craves Athens" loading="lazy" /><div><h3>STREET TACOS TRIO <span>€12.50</span></h3><p>Pulled pork, crispy chicken & grilled shrimp tacos with house-made salsas</p></div></article>
+            <article class="dish-card"><img src="assets/menu-brunch.jpg" alt="Royal Benedict eggs brunch Urban Craves Athens" loading="lazy" /><div><h3>ROYAL BENEDICT <span>€11.90</span></h3><p>Poached eggs, hollandaise, smoked salmon, avocado on sourdough toast</p></div></article>
+            <article class="dish-card"><img src="assets/menu-salads.jpg" alt="Powerhouse bowl grilled chicken salad Urban Craves Athens" loading="lazy" /><div><h3>THE POWERHOUSE BOWL <span>€13.50</span></h3><p>Grilled chicken, quinoa, roasted veggies, pomegranate, tahini dressing</p></div></article>
+            <article class="dish-card"><img src="assets/menu-cocktails.jpg" alt="Copper Old Fashioned craft cocktail Urban Craves Athens" loading="lazy" /><div><h3>COPPER OLD FASHIONED <span>€11.00</span></h3><p>Bourbon, orange bitters, smoked maple syrup, flamed orange peel</p></div></article>
+            <article class="dish-card"><img src="assets/menu-desserts.jpg" alt="Molten lava chocolate cake dessert Urban Craves Athens" loading="lazy" /><div><h3>MOLTEN LAVA CAKE <span>€9.50</span></h3><p>Dark chocolate lava cake, vanilla bean gelato, salted caramel drizzle</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-surface reveal">
+        <div class="container">
+          <div class="section-head"><p class="eyebrow">The Experience</p><h2>WHY URBAN CRAVES</h2><p class="subtitle">More than just a meal — it's a vibe.</p></div>
+          <div class="feature-grid">
+            <article><div class="icon">🔥</div><h3>BOLD FLAVORS</h3><p>Recipes crafted with spice, smoke, and global inspiration that pack a punch.</p></article>
+            <article><div class="icon">🌿</div><h3>FRESH INGREDIENTS</h3><p>Locally sourced, seasonal produce and premium cuts — quality you can taste.</p></article>
+            <article><div class="icon">🏙️</div><h3>URBAN ATMOSPHERE</h3><p>Industrial-chic design, warm lighting, and a social vibe that feels like home.</p></article>
+            <article><div class="icon">🍸</div><h3>CRAFTED DRINKS</h3><p>Handcrafted cocktails, local wines, and artisan beverages made with care.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section section-dark reveal">
+        <div class="container">
+          <div class="section-head"><p class="eyebrow">Follow The Vibe</p><h2>GALLERY</h2><p class="subtitle">Snapshots from our kitchen, bar, and dining room — every night is a story.</p></div>
+          <div class="gallery-grid">
+            <img src="assets/gallery-1.jpg" alt="Urban Craves gourmet burger and social atmosphere Athens" loading="lazy" />
+            <img src="assets/gallery-2.jpg" alt="Chef plating gourmet dish at Urban Craves Athens kitchen" loading="lazy" class="tall" />
+            <img src="assets/gallery-3.jpg" alt="Candlelit dinner table setting Urban Craves Athens restaurant" loading="lazy" />
+            <img src="assets/gallery-4.jpg" alt="Loaded fries street food style Urban Craves Athens" loading="lazy" class="tall" />
+            <img src="assets/gallery-5.jpg" alt="Overhead view shared dinner burgers fries Urban Craves Athens" loading="lazy" />
+            <img src="assets/gallery-6.jpg" alt="Bartender crafting signature cocktail Urban Craves Athens bar" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-surface reveal">
+        <div class="container">
+          <div class="section-head"><p class="eyebrow">What They Say</p><h2>GUEST REVIEWS</h2></div>
+          <div class="review-grid">
+            <article><p class="stars">★★★★★</p><p>"The Urban Smash burger is absolutely insane — best burger in Athens hands down. The vibe, the music, the cocktails… we keep coming back every weekend."</p><h3>MARIA K.</h3></article>
+            <article><p class="stars">★★★★★</p><p>"Perfect brunch spot. The Royal Benedict is chef's kiss, and the staff makes you feel like family. This place has serious style too — super photogenic."</p><h3>DIMITRIS L.</h3></article>
+            <article><p class="stars">★★★★★</p><p>"We celebrated my birthday here and it was unforgettable. The food was incredible, the Copper Old Fashioned is a must-try, and the atmosphere is so warm and trendy."</p><h3>SOPHIE A.</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-dark reveal">
+        <div class="container">
+          <div class="section-head"><p class="eyebrow">Find Us</p><h2>VISIT URBAN CRAVES</h2><p class="subtitle">We'd love to see you. Walk in or book ahead — great food awaits.</p></div>
+          <div class="contact-grid">
+            <div class="contact-list">
+              <article><h3>ADDRESS</h3><p>Kolokotroni 25, Psyrri<br />Athens 10562, Greece</p></article>
+              <article><h3>PHONE</h3><p>+30 210 123 4567</p></article>
+              <article><h3>EMAIL</h3><p>hello@urbancraves.gr</p></article>
+              <article><h3>HOURS</h3><p>Mon–Thu: 11:00 – 23:00<br />Fri–Sat: 11:00 – 01:00<br />Sun: 10:00 – 22:00</p></article>
+              <a href="mailto:hello@urbancraves.gr" class="btn btn-primary">Make a Reservation</a>
+            </div>
+            <div class="map-wrap">
+              <iframe title="Urban Craves Athens location map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.0!2d23.725!3d37.977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDU4JzM3LjIiTiAyM8KwNDMnMzAuMCJF!5e0!3m2!1sen!2sgr!4v1" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <p class="brand">URBAN CRAVES</p>
+            <p>Bold flavors, urban energy, and a social dining experience in the heart of Athens.</p>
+          </div>
+          <div>
+            <p class="footer-title">NAVIGATE</p>
+            <ul>
+              <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#menu">Menu</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-title">CONTACT</p>
+            <p>Kolokotroni 25, Psyrri, Athens</p><p>+30 210 123 4567</p><p>hello@urbancraves.gr</p>
+          </div>
+        </div>
+        <p class="copyright">© <span id="year"></span> Urban Craves. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
