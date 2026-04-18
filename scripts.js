@@ -1,9 +1,13 @@
 const header = document.getElementById('site-header');
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
+const hero = document.querySelector('.hero');
 
 function onScroll() {
   header.classList.toggle('scrolled', window.scrollY > 60);
+  if (hero) {
+    hero.style.backgroundPosition = `center ${window.scrollY * 0.2}px`;
+  }
 }
 
 menuToggle.addEventListener('click', () => {
