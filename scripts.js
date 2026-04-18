@@ -3,7 +3,7 @@ const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
 function onScroll() {
-  header.classList.toggle('scrolled', window.scrollY > 60);
+  header.classList.toggle('scrolled', window.scrollY > 50);
 }
 
 menuToggle.addEventListener('click', () => {
