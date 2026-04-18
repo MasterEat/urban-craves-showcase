@@ -118,3 +118,32 @@ h2 { font-size: clamp(2.5rem, 6vw, 4rem); margin: .3rem 0; }
   .gallery-grid .tall { grid-row: span 1; }
   .stats { gap: 1rem; flex-wrap: wrap; }
 }
+
+/* HEADER BASE (initial state) */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  background: transparent;
+  transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* LOGO (initial large state) */
+.site-header .logo img {
+  height: 80px;
+  transition: height 0.4s ease;
+}
+
+/* SCROLLED STATE */
+.site-header.scrolled {
+  background: #2a3b49;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* LOGO SMALLER ON SCROLL */
+.site-header.scrolled .logo img {
+  height: 55px;
+}
